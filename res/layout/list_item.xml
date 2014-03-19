@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/result_item_bg"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="16.0dp"
+    android:paddingTop="14.0dp" >
+
+    <TextView
+        android:id="@+id/tv_li_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="彭小峰——百度百科"
+        android:textColor="@drawable/color_list_item_title"
+        android:textSize="16.0sp" />
+
+    <TextView
+        android:id="@+id/tv_li_intro"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:lineSpacingExtra="5.0dip"
+        android:lines="2"
+        android:paddingTop="4.0dip"
+        android:text="彭小峰——百度百科彭小峰——百度百科彭小峰——百度百科彭小峰——百度百科彭小峰——百度百科彭小峰——百度百科彭小峰——百度百科彭小峰——百度百科彭小峰——百度百科彭小峰——百度百科彭小峰——百彭小峰——百度百科彭小峰——百度百科彭小峰——百度百科彭小峰——百度百科彭小峰——百度百科彭小峰——百度百科彭小峰——百度百科彭小峰——百度百科彭小峰——百度百科彭小峰——百度百科彭小峰——百度百科彭小峰——百度百科彭小峰——百度百科彭小峰——百度百科彭小峰——百度百科彭小峰——百度百科彭小峰——百度百科度百科彭小峰——百度百科彭小峰——百度百科彭小峰——百度百科彭小峰——百度百科彭小峰——百度百科彭小峰——百度百科"
+        android:textColor="@drawable/color_list_item_summary"
+        android:textSize="16.0sp" />
+
+</LinearLayout>

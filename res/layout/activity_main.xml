@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fffbfbfb"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <com.czs.yat.view.SlideMenu
+        android:id="@+id/slide_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <include layout="@layout/layout_menu" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/c_list_bg"
+            android:orientation="vertical" >
+
+            <include layout="@layout/layout_title_bar" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llt_progress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:orientation="horizontal" >
+
+                    <ProgressBar
+                        android:id="@+id/pb_news_layout_progress"
+                        style="?android:attr/progressBarStyleLarge"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/result_loading"
+                        android:textColor="#9ca6ad"
+                        android:textSize="18.0sp" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lv_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:cacheColorHint="#0000"
+                    android:clickable="false"
+                    android:divider="@drawable/divider"
+                    android:fadingEdge="none"
+                    android:focusable="false"
+                    android:headerDividersEnabled="false"
+                    android:listSelector="@drawable/list_selector"
+                    android:scrollbarStyle="outsideOverlay"
+                    android:scrollbars="vertical"
+                    android:scrollingCache="false"
+                    android:stackFromBottom="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.czs.yat.view.SlideMenu>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hint_account">帐号/邮箱</string>
+    <string name="hint_password">密码</string>
+    <string name="cancel">取消</string>
+    <string name="signup">注册</string>
+    <string name="hint_ensure">确认</string>
+    <string name="app_company">广东省安全生产技术中心</string>
+    <string name="app_name">粤安通</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="global_login">登录</string>
+    <string name="global_signup">注册</string>
+    <string name="global_index">首页</string>
+    <string name="global_chemistry">化学品</string>
+    <string name="global_law">安全法规</string>
+    <string name="global_standard">安全标准规范</string>
+    <string name="global_operation">安全操作规程</string>
+    <string name="global_law_basis">安监执法依据</string>
+    <string name="global_equipment">安全生产设备</string>
+    <string name="global_licensing">安监行政许可企业</string>
+    <string name="global_contacts">安监通讯录</string>
+    <string name="global_collect">收藏表</string>
+    <string name="global_collect_success">收藏成功</string>
+    <string name="global_clear_record">清除记录</string>
+    <string name="global_menu">菜单</string>
+    <string name="global_exit">退出</string>
+    <string name="space" />
+    <string name="search">搜索</string>
+    <string name="result_loading">正在加载...</string>
+    <string name="app_copyright_date">Copyright © 2012-2015 Ugeek.</string>
+    <string name="app_version">程序版本：1.6.1</string>
+    <string name="app_all_right">All Rights Reserved.</string>
+    <string name="not_blank">关键字不能为空</string>
+    <string name="popup_login_title">登录粤安通</string>
+    <string name="popup_signup_title">注册粤安通</string>
+    <string name="password_not_blank">密码不能为空</string>
+    <string name="password_not_same">密码输入不一致</string>
+    <string name="account_not_blank">帐号/邮箱不能为空</string>
+    <string name="logining">正在登录...</string>
+    <string name="signuping">正在注册...</string>
+    <string name="net_error">网络错误</string>
+    <string name="account_welcome">您好，%s</string>
+
+</resources>

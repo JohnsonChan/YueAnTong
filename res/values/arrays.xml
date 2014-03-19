@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="prioritys">
+        <item>重要且紧急</item>
+        <item>紧急不重要</item>
+        <item>重要不紧急</item>
+        <item>不紧急不重要</item>
+    </string-array>
+    <string-array name="types">
+        <item>学习</item>
+        <item>工作</item>
+        <item>个人</item>
+        <item>生活</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="cycle_time">
+        <item>5分钟</item>
+        <item>10分钟</item>
+        <item>一刻钟</item>
+        <item>20分钟</item>
+        <item>半个小时</item>
+        <item>40分钟</item>
+        <item>50分钟</item>
+        <item>1小时</item>
+        <item>2小时</item>
+        <item>3小时</item>
+        <item>4小时</item>
+        <item>5小时</item>
+        <item>6小时</item>
+        <item>7小时</item>
+        <item>8小时</item>
+        <item>9小时</item>
+        <item>10小时</item>
+        <item>11小时</item>
+        <item>12小时</item>
+        <item>13小时</item>
+        <item>14小时</item>
+        <item>15小时</item>
+        <item>16小时</item>
+        <item>17小时</item>
+        <item>18小时</item>
+        <item>19小时</item>
+        <item>20小时</item>
+        <item>21小时</item>
+        <item>22小时</item>
+        <item>23小时</item>
+        <item>一天</item>
+    </string-array>
+    <string-array name="hold_ranks">
+        <item>穷困潦倒</item>
+        <item>半生不熟</item>
+        <item>登堂入室</item>
+        <item>Hold住草根</item>
+        <item>渐入佳境</item>
+        <item>鹤立鸡群</item>
+        <item>一代宗师</item>
+        <item>Hold住达人</item>
+        <item>震古烁今</item>
+        <item>超凡入圣</item>
+        <item>返璞归真</item>
+        <item>Hold住明星</item>
+    </string-array>
+    <string-array name="wisdom">
+        <item>得之坦然，失之淡然。争其必然，顺其自然</item>
+        <item>最先衰老的从来不是容貌，而是那份不顾一切的闯劲</item>
+        <item>把脾气拿出来，那叫本能；把脾气压回去，才叫本事</item>
+        <item>给每个日子取个温暖的名字，做个赏心悦目的人</item>
+        <item>生活的理想，就是为了理想的生活</item>
+        <item>人生不能靠心情活着，而要靠心态去生活</item>
+        <item>我相信那一切都是种子 ， 只有经过埋葬 才有生机</item>
+        <item>爱笑的人，幸福不会太远</item>
+        <item>不要害怕影子，那不是怎么不远处有光明嘛</item>
+        <item>问一个不恰当的问题，于是走上了通往恰当答案的路</item>
+        <item>最好的时光在路上</item>
+        <item>放弃时间的同时也被时间放弃了</item>
+        <item>要暗透了，才能更见星光</item>
+        <item>孤独，是留给自己思考的时间</item>
+        <item>我还年轻，我渴望上路</item>
+        <item>得之坦然，失之淡然</item>
+        <item>得之坦然，失之淡然。青春赋予你锋芒，请别让他失望</item>
+        <item>我唯一知道的就是我一无所知</item>
+        <item>忘掉今天的人将被明天忘掉</item>
+        <item>合理安排时间，就等于节约时间</item>
+        <item>浪费时间是一桩大罪过</item>
+        <item>几秒钟虽然不长，却构成永恒长河中的伟大时代</item>
+        <item>谁把一生的光阴虚度，便是抛下黄金未买一物</item>
+        <item>在一切与天俱来的天然赠品中，时间最为宝贵</item>
+        <item>你想使一个人残废，只要给他一对拐杖,取走你的拐杖，Hlod住时间</item>
+        <item>古之立大事者，不惟有超世之才，亦必有坚忍不拔之志</item>
+        <item>一个人能走多远，看他与谁同行，与小Hold同行</item>
+        <item>起点可能影响结果，但不会决定结果</item>
+        <item>从现在起，我已无暇顾及过去，我要向前走</item>
+        <item>年华里开出一朵地老天荒的花，是我们的青春~~~</item>
+        <item>先行一步，也许是冒险，但谁敢说，冒险不是一个段更美妙的旅程</item>
+    </string-array>
+
+</resources>

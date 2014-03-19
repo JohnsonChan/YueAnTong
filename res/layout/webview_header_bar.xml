@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="44.0dip"
+    android:background="@drawable/widget_navigation_bar_bg" >
+
+    <ImageButton
+        android:id="@+id/ib_back"
+        android:layout_width="58.0dip"
+        android:layout_height="43.0dip"
+        android:background="@drawable/btn_navigation_back"
+        android:contentDescription="@string/space" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true" >
+
+        <ImageButton
+            android:id="@+id/ib_search"
+            android:layout_width="50.0dip"
+            android:layout_height="43.0dip"
+            android:background="@drawable/btn_new_search"
+            android:contentDescription="@string/space"
+            android:scaleType="fitXY" />
+
+        <ImageButton
+            android:id="@+id/ib_collect"
+            android:layout_width="50.0dip"
+            android:layout_height="43.0dip"
+            android:background="@drawable/btn_addto_mybaike"
+            android:contentDescription="@string/space" />
+
+        <ImageButton
+            android:id="@+id/ib_more"
+            android:layout_width="50.0dip"
+            android:layout_height="43.0dip"
+            android:background="@drawable/btn_more_op"
+            android:contentDescription="@string/space" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/navigation_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20.0dip"
+        android:text="@string/space"
+        android:textColor="#ffffffff"
+        android:textSize="18.0sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

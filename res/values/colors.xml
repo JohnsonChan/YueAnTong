@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="c_list_title">#154E96</color>
+    <color name="c_list_bg">#FBFBFB</color>
+    <color name="c_list_abstract">#505050</color>
+    <color name="c_list_bg_press">#C8EE9B</color>
+    
+    
+    <color name="dialog_title">#52BFE7</color>
+    <color name="dialog_yellow_line">#FEBF40</color>
+    
+
+</resources>
