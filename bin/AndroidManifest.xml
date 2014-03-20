@@ -20,7 +20,7 @@
         android:theme="@style/AppTheme" >
          <uses-library android:name="android.test.runner" />
         <activity
-            android:name="com.czs.yat.SplashActivity"
+            android:name="com.czs.yat.activity.SplashActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,10 +28,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.czs.yat.ResultActivity" >
+        <activity android:name="com.czs.yat.activity.ResultActivity" >
         </activity>
         <activity
-            android:name="com.czs.yat.MainActivity"
+            android:name="com.czs.yat.activity.MainActivity"
             android:windowSoftInputMode="adjustPan" >
         </activity>
     </application>

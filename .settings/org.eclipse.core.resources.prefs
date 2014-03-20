@@ -1,4 +1,4 @@
 eclipse.preferences.version=1
-encoding//src/com/czs/yat/MainActivity.java=UTF-8
-encoding//src/com/czs/yat/ResultActivity.java=UTF-8
-encoding//src/com/czs/yat/SplashActivity.java=UTF-8
+encoding//src/com/czs/yat/activity/MainActivity.java=UTF-8
+encoding//src/com/czs/yat/activity/ResultActivity.java=UTF-8
+encoding//src/com/czs/yat/activity/SplashActivity.java=UTF-8
