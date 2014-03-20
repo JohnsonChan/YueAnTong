@@ -56,13 +56,14 @@
         <com.czs.yat.view.MyEditText
             android:id="@+id/et_key"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="35.0dip"
             android:layout_weight="1"
             android:background="@drawable/bg_comments_input_outframe"
             android:drawableRight="@drawable/btn_search_del"
+            android:drawableLeft="@drawable/search_icon"
             android:ems="10"
             android:singleLine="true"
-            android:textSize="12.0sp" />
+            android:textSize="15.0sp" />
 
         <Button
             android:id="@+id/btn_search"
