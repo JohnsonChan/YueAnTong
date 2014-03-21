@@ -11,6 +11,7 @@ import com.czs.yat.util.Http.HttpBuilder;
 
 public class SignUpTask extends AsyncTask<Void, Void, String>
 {
+    private final static String URL = "/yat/admin/yatRegAction.jsp?";
 	private String password = null; // 请求类型
 	private String account = null; // key关键字
 	private SignUpListener signUpListener = null; // 消息获取监听器
@@ -34,7 +35,7 @@ public class SignUpTask extends AsyncTask<Void, Void, String>
 		try
 		{
 			String result = httpBuilder
-					.url("http://218.192.99.29/yat/admin/yatRegAction.jsp?")
+					.url(NetHelper.HOST + URL)
 					.formBodyWithDefault("username", account, "password", password).post();
 			System.out.println(result);
 			if (null != result)

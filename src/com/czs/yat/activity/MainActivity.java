@@ -26,6 +26,7 @@ import com.czs.yat.callback.LoginListener;
 import com.czs.yat.callback.ResultsGetListListener;
 import com.czs.yat.callback.SignUpListener;
 import com.czs.yat.data.Result;
+import com.czs.yat.data.SearchType;
 import com.czs.yat.data.YatConstants;
 import com.czs.yat.net.LoginTask;
 import com.czs.yat.net.ResultGetListTask;
@@ -65,10 +66,9 @@ public class MainActivity extends Activity implements ResultsGetListListener,
 	private ListView resultListView = null;
 	private Button searchButton = null;
 	// private LinearLayout loadLinearLayout = null;
-	private String keyValue = null;
-	private String keyType = null;
 	private String account = null;
 	private String password = null;
+	SearchType searchType;
 
 	private SharedPreferences sharedPreferences;
 	private SharedPreferences.Editor editor;
@@ -277,7 +277,7 @@ public class MainActivity extends Activity implements ResultsGetListListener,
 			@Override
 			public void onClick(View v)
 			{
-				keyType = YatConstants.keyChem;
+				searchType = SearchType.CHEM;
 				titleTextView.setText(R.string.global_chemistry);
 				titleImageView.setImageResource(R.drawable.menu_chem);
 				showMenu();
@@ -290,7 +290,7 @@ public class MainActivity extends Activity implements ResultsGetListListener,
 			@Override
 			public void onClick(View v)
 			{
-				keyType = YatConstants.keyLaw;
+			    searchType = SearchType.LAW;
 				titleTextView.setText(R.string.global_law);
 				titleImageView.setImageResource(R.drawable.menu_law);
 				showMenu();
@@ -303,7 +303,7 @@ public class MainActivity extends Activity implements ResultsGetListListener,
 			@Override
 			public void onClick(View v)
 			{
-				keyType = YatConstants.keyStandard;
+			    searchType = SearchType.STANDARD;
 				titleTextView.setText(R.string.global_standard);
 				titleImageView.setImageResource(R.drawable.menu_standard);
 				showMenu();
@@ -317,7 +317,7 @@ public class MainActivity extends Activity implements ResultsGetListListener,
 			@Override
 			public void onClick(View v)
 			{
-				keyType = YatConstants.keyOperation;
+			    searchType = SearchType.OPERATION;
 				titleTextView.setText(R.string.global_operation);
 				titleImageView.setImageResource(R.drawable.menu_operation);
 				showMenu();
@@ -330,7 +330,7 @@ public class MainActivity extends Activity implements ResultsGetListListener,
 			@Override
 			public void onClick(View v)
 			{
-				keyType = YatConstants.keyLawBasic;
+			    searchType = SearchType.LAW_BASIS;
 				titleTextView.setText(R.string.global_law_basis);
 				titleImageView.setImageResource(R.drawable.menu_basic);
 				showMenu();
@@ -344,7 +344,7 @@ public class MainActivity extends Activity implements ResultsGetListListener,
 			@Override
 			public void onClick(View v)
 			{
-				keyType = YatConstants.keyEquipment;
+			    searchType = SearchType.EQUIPMENT;
 				titleTextView.setText(R.string.global_equipment);
 				titleImageView.setImageResource(R.drawable.menu_equipment);
 				showMenu();
@@ -358,7 +358,7 @@ public class MainActivity extends Activity implements ResultsGetListListener,
 			@Override
 			public void onClick(View v)
 			{
-				keyType = YatConstants.keyLicensing;
+			    searchType = SearchType.LICENSING;
 				titleTextView.setText(R.string.global_licensing);
 				titleImageView.setImageResource(R.drawable.menu_company);
 				showMenu();
@@ -371,7 +371,7 @@ public class MainActivity extends Activity implements ResultsGetListListener,
 			@Override
 			public void onClick(View v)
 			{
-				keyType = YatConstants.keyContacts;
+			    searchType = SearchType.CONTACTS;
 				titleTextView.setText(R.string.global_contacts);
 				titleImageView.setImageResource(R.drawable.menu_contact);
 				showMenu();
@@ -432,7 +432,7 @@ public class MainActivity extends Activity implements ResultsGetListListener,
 				}
 				else
 				{
-					new ResultGetListTask("", 0, keyType, keyValue,
+					new ResultGetListTask("", 0, searchType, keyEditText.getText().toString(),
 							MainActivity.this).execute();
 					// loadLinearLayout.setVisibility(View.VISIBLE);
 				}

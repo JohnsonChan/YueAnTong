@@ -1,32 +1,33 @@
 package com.czs.yat.net;
 
 import java.util.ArrayList;
-
 import org.json.JSONArray;
 import org.json.JSONObject;
-
 import android.os.AsyncTask;
+import android.text.TextUtils;
 
 import com.czs.yat.callback.ResultsGetListListener;
 import com.czs.yat.data.Result;
+import com.czs.yat.data.SearchType;
 import com.czs.yat.util.Http.HttpBuilder;
+import com.czs.yat.util.LogUtil;
 
 public class ResultGetListTask extends AsyncTask<Void, Void, ArrayList<Result>>
 {
 	private String token = null; // 用户标志
 	private int startId = 0; // 开始id
-	private String keyType = null; // 请求类型
-	private String keyValue = null; // key关键字
+	private SearchType searchType;  // 搜索的类型
+	private String keyWord = null; // key关键字
 	private ResultsGetListListener newsGetListListener = null; // 消息获取监听器
+	
 
-
-	public ResultGetListTask(String token, int startId, String keyType,
-			String keyValue, ResultsGetListListener newsGetListListener)
+	public ResultGetListTask(String token, int startId, SearchType searchType,
+			String keyWord, ResultsGetListListener newsGetListListener)
 	{
 		this.token = token;
 		this.startId = startId;
-		this.keyType = keyType;
-		this.keyValue = keyValue;
+		this.searchType = searchType;
+		this.keyWord = keyWord;
 		this.newsGetListListener = newsGetListListener;
 	}
 
@@ -37,11 +38,21 @@ public class ResultGetListTask extends AsyncTask<Void, Void, ArrayList<Result>>
 		HttpBuilder httpBuilder = new HttpBuilder();
 		try
 		{
+		    String url = null;
+		    if (TextUtils.isEmpty(keyWord))
+		    {
+		       url = NetHelper.getUrl(searchType);
+		    }
+		    else {
+                url = NetHelper.getQueryUrl(searchType);
+            }
+		    LogUtil.d(url);
 			String result = httpBuilder
-					.url("http://218.192.99.29/yat/yatChem.jsp")
+					.url(NetHelper.HOST + url)
 					.formBodyWithDefault("token", token, "startId",
-							String.valueOf(startId), "keyType", keyType,
-							"keyValue", keyValue).post();
+							String.valueOf(startId),
+							"keyWord", keyWord).post();
+			
 			if (null != result)
 			{
 				JSONObject jsonObject = new JSONObject(result);
@@ -56,7 +67,7 @@ public class ResultGetListTask extends AsyncTask<Void, Void, ArrayList<Result>>
 						results.add(new Result(newsJsonObject
 								.getInt("result_id"), newsJsonObject
 								.getString("title"), newsJsonObject
-								.getString("intro"), newsJsonObject
+								.getString("summary"), newsJsonObject
 								.getString("url")));
 					}
 				}
@@ -64,8 +75,11 @@ public class ResultGetListTask extends AsyncTask<Void, Void, ArrayList<Result>>
 		}
 		catch (Exception e)
 		{
+		    LogUtil.d("wewe");
+		    e.printStackTrace();
 			return null;
 		}
+		   LogUtil.d(results.size()+"");
 		return results;
 	}
 

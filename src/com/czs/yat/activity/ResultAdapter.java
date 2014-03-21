@@ -3,6 +3,7 @@ package com.czs.yat.activity;
 import java.util.ArrayList;
 
 import android.content.Context;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,8 +11,6 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.czs.yat.R;
-import com.czs.yat.R.id;
-import com.czs.yat.R.layout;
 import com.czs.yat.data.Result;
 
 public class ResultAdapter extends BaseAdapter
@@ -67,7 +66,7 @@ public class ResultAdapter extends BaseAdapter
 		}
 		
 		chatHolder.titleTextView.setText(result.getTitle());
-		chatHolder.introTextView.setText(result.getIntro());
+		chatHolder.introTextView.setText(Html.fromHtml(result.getIntro()));
 
 		return convertView;
 	}

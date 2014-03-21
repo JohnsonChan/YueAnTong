@@ -10,10 +10,11 @@ import com.czs.yat.util.Http.HttpBuilder;
 
 public class LoginTask extends AsyncTask<Void, Void, String>
 {
+    private final static String URL = "/yat/admin/yatLogAction.jsp";
 	private String password = null; // 请求类型
 	private String account = null; // key关键字
 	private LoginListener loginListener = null; // 消息获取监听器
-	private int status = -1;
+	private int status = -1;   // 0成功，1密码有误，2用户名有误
 
 	public LoginTask(String account,
 			String password, LoginListener loginListener)
@@ -31,7 +32,7 @@ public class LoginTask extends AsyncTask<Void, Void, String>
 		try
 		{
 			String result = httpBuilder
-					.url("http://218.192.99.29/yat/admin/yatLogAction.jsp")
+					.url(NetHelper.HOST+URL)
 					.formBodyWithDefault("username", account, "password", password).post();
 			if (null != result)
 			{
